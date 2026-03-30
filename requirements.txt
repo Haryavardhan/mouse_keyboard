@@ -1,0 +1,31 @@
+# ============================================================
+# Virtual Gesture Mouse + Keyboard — Requirements
+# ============================================================
+# Install everything with:
+#   pip install -r requirements.txt
+#
+# NOTE: PyAudio on Windows sometimes needs a pre-built wheel.
+#   If "pip install pyaudio" fails, run:
+#   pip install pipwin && pipwin install pyaudio
+# ============================================================
+
+# ── Core hand-tracking & vision ──────────────────────────────
+mediapipe==0.10.14
+opencv-python==4.13.0.92
+numpy==2.4.3
+
+# ── Desktop / mouse & keyboard automation ────────────────────
+PyAutoGUI==0.9.54
+screen_brightness_control==0.27.1
+pywin32==311
+pyperclip==1.11.0
+
+# ── Voice recognition ("stop" command) ───────────────────────
+SpeechRecognition==3.15.2
+PyAudio==0.2.14            # microphone input for SpeechRecognition
+
+# ── Optional / text-to-speech (TTS feedback) ─────────────────
+pyttsx3==2.99
+
+# ── Image / utility dependencies pulled in automatically ─────
+pillow==12.1.1
